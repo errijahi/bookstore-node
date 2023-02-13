@@ -62,6 +62,3 @@ app.use('/api/books',booksRouter);
 app.listen(8800,()=>{
     console.log("Connected!")
 })
-
-//for vercel
-module.exports = app;
