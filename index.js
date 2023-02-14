@@ -13,6 +13,10 @@ import * as dotenv from 'dotenv'
 dotenv.config()
 
 const app = express();
+
+const cors = require('cors');
+app.use(cors());
+
 const storage = getStorage();
 
 const upload = multer({ storage: multer.memoryStorage() });
