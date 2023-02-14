@@ -15,7 +15,10 @@ dotenv.config()
 const app = express();
 
 import cors from "cors";
-app.use(cors());
+app.use(cors({
+    origin: [`https://bookstore-react-4poq.onrender.com`, `https://bookstore-react-4poq.onrender.com`],
+    credentials: 'true',
+  }));
 
 const storage = getStorage();
 
