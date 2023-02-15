@@ -17,11 +17,11 @@ const app = express();
 import cors from "cors";
 
 const corsOptions = {
-  "origin": 'https://bookstore-react-4poq.onrender.com',
-  "credentials": true, 
-//   "origin": "*",
-  "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
-  "preflightContinue": false,
+  origin: 'https://bookstore-react-4poq.onrender.com',
+  credentials: true, 
+  //origin: "*",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  preflightContinue: false,
 };
 
 app.use(cors(corsOptions));
