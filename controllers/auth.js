@@ -43,6 +43,7 @@ export const login = (req,res) =>{
     const {password,...other} = data[0];
 
     res.cookie("access_token",token,{
+        withCredentials: true,
         httpOnly:true,
         sameSite:"none",
         secure:true
